@@ -16,7 +16,7 @@ const path = require("path");
 dotenv.config();
 
 mongoose.connect(
-  process.env.MONGO_URL,
+  mongodb+srv://dbUser:sagun1812@cluster0.vv6ml.mongodb.net/Sagun,
   { useNewUrlParser: true, useUnifiedTopology: true },
   () => {
     console.log("Connected to MongoDB");
