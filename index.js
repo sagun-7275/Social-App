@@ -15,9 +15,9 @@ const path = require("path");
 const PORT = process.env.PORT || 8800;
 
 dotenv.config();
-
+const muri = 'mongodb+srv://dbUser:sagun1812@cluster0.vv6ml.mongodb.net/Sagun';
 mongoose.connect(
-  mongodb+srv://dbUser:sagun1812@cluster0.vv6ml.mongodb.net/Sagun,
+  muri,
   { useNewUrlParser: true, useUnifiedTopology: true },
   () => {
     console.log("Connected to MongoDB");
